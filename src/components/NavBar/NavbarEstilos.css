@@ -1,0 +1,87 @@
+/* Navbar transparente por defecto */
+.navbar-default {
+  transition: background 0.3s ease-in-out, padding 0.3s ease-in-out;
+  padding: 15px 0;
+}
+
+/* Navbar con fondo negro al hacer scroll */
+.navbar-scrolled {
+  background: black;
+  padding: 10px 0;
+  transition: background 0.3s ease-in-out, padding 0.3s ease-in-out;
+  background-size: cover;
+  background-position: center;
+}
+
+/* Enlaces generales */
+.navbar-nav .nav-item .nav-link {
+  color: white !important;
+  padding: 10px 15px;
+  transition: background 0.2s ease-in-out, color 0.2s ease-in-out;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+  background-color: #01bf71;
+  color: white !important;
+  border-radius: 5px;
+}
+
+/* Botón hamburguesa */
+.custom-toggler {
+  border: none !important;
+  outline: none !important;
+}
+
+.custom-toggler:focus {
+  box-shadow: none !important;
+}
+
+/* Collapse en móviles */
+@media (max-width: 768px) {
+  .navbar-collapse {
+    opacity: 0;
+    visibility: hidden; /* Mantener oculto inicialmente */
+    transform: translateY(-10px);
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out, visibility 0s 0.3s; /* Retrasar visibilidad */
+  }
+
+  .navbar-collapse.show {
+    opacity: 1;
+    visibility: visible; /* Se hace visible sin parpadeo */
+    transform: translateY(0);
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out, visibility 0s 0s; /* Sin retraso en visibilidad */
+    background: #000;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    padding: 2rem 1rem;
+  }
+
+  .navbar-nav {
+    text-align: center;
+    width: 100%;
+  }
+
+  .navbar-nav .nav-item {
+    width: 100%;
+  }
+
+  .navbar-nav .nav-item .nav-link {
+    display: block;
+    padding: 15px;
+    margin: 5px 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 5px;
+    color: white !important;
+    transition: background-color 0.3s ease;
+  }
+
+  .navbar-nav .nav-item .nav-link:hover {
+    background-color: #6debb5;
+    color: white !important;
+  }
+}

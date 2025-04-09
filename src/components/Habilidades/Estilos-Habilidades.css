@@ -1,0 +1,21 @@
+#habilidades{
+  padding: 150px 0;
+}
+.caja-habilidades{
+  font-size: 16px!important;
+  text-align: left!important;
+  margin: 10px 0;
+  font-family: 'Roboto', sans-serif;
+  padding-top: 10px!important;
+  padding-bottom: 10px!important;
+}
+.titulo-habilidades{
+  padding-bottom: 30px;
+}
+.caja-habilidades > svg {
+  font-size: 25px;
+}@media (max-width: 768px) {
+  #habilidades{
+      padding: 120px 0;
+  }
+}

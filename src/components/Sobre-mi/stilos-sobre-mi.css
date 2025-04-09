@@ -1,0 +1,154 @@
+/* Ajustes generales */
+.bloque-sobre-mi {
+  padding: 50px 0;
+}
+
+.bloque-sobre-mi .modo-mobil {
+  display: none;
+}
+
+.fadeInDownteo-sobremi {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+.imagen-teo {
+  width: 70%;
+  border-radius: 10px;
+  -webkit-box-shadow: 1px 1px 19px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 1px 1px 19px 0px rgba(0,0,0,0.75);
+  box-shadow: 1px 1px 19px 0px rgba(0,0,0,0.75);
+}
+
+/* Animaciones */
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Animaciones específicas de la imagen */
+.fadeInLeftfoto {
+  -webkit-animation-name: fadeInLeft;
+  animation-name: fadeInLeft;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+@-webkit-keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+@keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+/* Animación de la imagen al subir */
+.fadeInUpimagen {
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp;
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+@-webkit-keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+/* Ajustes para pantallas de dispositivos móviles */
+@media (max-width: 768px) {
+  .imagen-teo-mobil {
+    width: 75%;
+  }
+
+  .bloque-sobre-mi .texto-cuerpo {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 576px) {
+  .imagen-teo-mobil {
+    width: 80%; /* Ajustamos el tamaño para que ocupe más espacio */
+    margin-top: 20px; /* Separar la imagen del texto */
+  }
+
+  .bloque-sobre-mi .modo-escritorio {
+    display: none; /* Ocultamos la versión de escritorio en móvil */
+  }
+
+  .bloque-sobre-mi .modo-mobil {
+    display: flex; /* Mostramos el layout para móvil */
+    flex-direction: column; /* Cambiamos la dirección de los elementos a columna */
+    align-items: center; /* Centramos los elementos */
+  }
+
+  .bloque-sobre-mi .texto-cuerpo {
+    font-size: 14px; /* Aumentamos el tamaño del texto en móvil */
+  }
+}

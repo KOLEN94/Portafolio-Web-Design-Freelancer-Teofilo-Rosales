@@ -1,0 +1,23 @@
+.bloque-contacto{
+  padding: 80px 0;
+}
+.caja-contacto{
+  min-height: fit-content;
+  cursor: pointer;
+}
+.caja-contacto:hover{
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.75);
+  transition: .2s ease;
+}
+.caja-contacto > .icono{
+  font-size: 50px;
+}
+@media (max-width: 768px) {
+  .caja-contacto > .icono{
+      font-size: 30px;
+  }
+  .caja-contacto .informacion-contacto{
+      font-size: 16px;
+  }
+}
+

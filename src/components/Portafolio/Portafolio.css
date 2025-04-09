@@ -1,0 +1,113 @@
+#portafolio{
+  padding: 50px 0;
+  background: #f9f9f9;
+}
+
+
+.menu {
+  padding: 1rem 0;
+}
+.title {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.underline {
+  width: 5rem;
+  height: 0.25rem;
+  background:  #212529;
+  margin-left: auto;
+  margin-right: auto;
+}
+.btn-container {
+  margin-bottom: 4rem;
+  display: flex;
+  justify-content: center;
+}
+.btn-ver-mas {
+  background: transparent;
+  border-color: transparent;
+  font-size: 1rem;
+  text-transform: capitalize;
+  margin: 0 0.5rem;
+  letter-spacing: 1px;
+  padding: 0.375rem 0.75rem;
+  color: red;
+  border-radius: .2rem;
+  cursor: pointer;
+}
+.btn-ver-mas:hover {
+  background: red;
+  color: white;
+}
+.section-center {
+  width: auto;
+  margin: 0 auto;
+  display: grid;
+  gap: 3rem 2rem;
+  justify-items: center;
+}
+.texto-testimonio{
+  min-height: 46px;
+}
+.menu-item {
+  cursor: pointer;
+  min-height: 460px;
+  width: 18rem;
+  border: none!important;
+}
+.menu-item:hover{
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.75);
+  transition: .2s ease;
+}
+.photo {
+  object-fit: cover;
+  height: 200px;
+  width: 100%;
+  border: 0.25rem solid red;
+  display: block;
+}
+.bloque-botones-filtro{
+  display: flex;
+  padding: 30px 0px;
+}
+.boton-filtro{
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+}
+.link-pagina{
+  width: 100%;
+}
+.ver-mas {
+  background: #fff !important;
+  color: red;
+  padding-left: 40px !important;
+  padding-right: 40px !important;
+}
+.ver-mas:hover{
+  background: #212529 !important;
+}
+@media (max-width: 575px) {
+  .boton-filtro  {
+    
+    width: fit-content;
+    margin: 15px 5px;
+  }
+  .bloque-botones-filtro{
+      display: inline-table;
+  }
+}
+  .section-center{
+      width: auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      display: flex;
+      flex-wrap: wrap;
+      overflow: hidden;
+  }
+  .photo {
+      height: 150px;
+  }
+  

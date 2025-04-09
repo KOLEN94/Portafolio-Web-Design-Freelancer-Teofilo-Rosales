@@ -1,0 +1,17 @@
+.bloque-footer{
+  background: #f9f9f9;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.fecha-footer{
+  font-size: 15px;
+}
+@media (max-width: 768px) {
+  .bloque-footer{
+      padding-top: 40px;
+      padding-bottom: 40px;
+  }
+  .bloque-footer .fecha-footer{
+      font-size: 15px;
+  }
+}

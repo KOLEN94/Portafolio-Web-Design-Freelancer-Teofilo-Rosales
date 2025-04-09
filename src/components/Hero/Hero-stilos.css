@@ -1,0 +1,132 @@
+.Inicio {
+  background-image: url('../../image/banner-teofilowp.webp');
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  position: relative;
+}
+
+.contenido-hero {
+  min-height: 80vh;
+  background-color: rgba(0, 0, 0, 0.65);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 1rem;
+}
+
+.bloque-titulos {
+  margin-bottom: 2rem;
+}
+
+.titulo-h1 {
+  font-size: 56px;
+  font-weight: bold;
+}
+
+.titulo-h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.titulo-h3 {
+  font-size: 22px;
+  margin-top: 10px;
+  width: 70%;
+  margin: auto;
+}
+
+.bloque-social,
+.bloque-CV {
+  padding-top: 30px;
+}
+
+.boton-cv {
+  border-radius: 25px;
+  padding: 10px 25px;
+  font-size: 16px;
+}
+
+.icono-social {
+  font-size: 24px;
+  margin: 0 0.5rem;
+  transition: color 0.3s ease;
+}
+
+.icono-social:hover {
+  color: #01bf71;
+}
+
+/* Animación */
+.fadeInDownteo {
+  animation-name: fadeInDown;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* -------------------------
+   MEDIA QUERIES RESPONSIVAS
+------------------------- */
+
+/* Tablets */
+@media (max-width: 768px) {
+  .contenido-hero .titulo-h1 {
+    font-size: 45px;
+  }
+
+  .contenido-hero .titulo-h2 {
+    font-size: 25px;
+  }
+
+  .contenido-hero .titulo-h3 {
+    font-size: 14px;
+  }
+
+  .boton-cv {
+    font-size: 14px;
+  }
+
+  .icono-social {
+    font-size: 22px;
+  }
+}
+
+/* Teléfonos */
+@media (max-width: 576px) {
+  .contenido-hero {
+    min-height: 100vh;}
+
+  .contenido-hero .titulo-h1 {
+    font-size: 36px;
+  }
+
+  .contenido-hero .titulo-h2 {
+    font-size: 20px;
+    padding-top: 60px;
+  }
+
+  .contenido-hero .titulo-h3 {
+    font-size: 14px;
+    width: 100%;
+  }
+
+  .boton-cv {
+    font-size: 13px;
+  }
+
+  .icono-social {
+    font-size: 20px;
+  }
+}

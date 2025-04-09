@@ -1,0 +1,17 @@
+.seccion-testimonios {
+  padding: 50px 0 ;
+  background-image: url('../../image/bg-pattern.webp');
+  background-position: 50% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.tarjeta-slider{
+  border: 3px solid #6debb5!important;
+  background: transparent!important;
+  margin-right: 2rem;
+  color: #fff!important;
+  
+}
+.job-title{
+  color:#fff;
+}
